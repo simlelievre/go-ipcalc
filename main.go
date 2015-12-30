@@ -14,7 +14,7 @@
 
 package main
 
-import "github.com/simlelievre/goip/cmd"
+import "github.com/simlelievre/go-ipcalc/cmd"
 
 func main() {
 	cmd.Execute()
