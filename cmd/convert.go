@@ -98,6 +98,16 @@ func SliceOr(s1, s2 []byte) []byte {
 	return s
 }
 
+// SliceOr return the NOT of bytes slice
+func SliceNot(s1 []byte) []byte {
+	mini := len(s1)
+	s := make([]byte, mini)
+	for i := 0; i < mini; i++ {
+		s[i] = ^s1[i]
+	}
+	return s
+}
+
 // SliceShiftRight return a slive of bytes shifted by "bits" bits
 func SliceShiftRight(s1 []byte, bits uint) []byte {
 	l := len(s1)
